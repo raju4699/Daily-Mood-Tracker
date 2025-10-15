@@ -1,0 +1,384 @@
+.home-bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.home-content-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  flex-grow: 1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 8px;
+}
+.home-content-heading {
+  font-family: Roboto;
+  color: #ffbe38;
+  font-size: 36px;
+  font-weight: 700;
+  display: none;
+}
+.month-emoji-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  width: 95%;
+}
+.month-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.month-name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.month-name {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.empty-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.arrow-icon-buttons {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20.75px;
+}
+.day-list-container {
+  margin: 0px auto;
+  padding: 0px;
+  list-style-type: none;
+  font-family: Roboto;
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.days-list-item {
+  height: 51px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dates-list-container {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  gap: 8px;
+}
+.dates-list-item {
+  background-color: #343243;
+  height: 51px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty-date-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.date-emoji-image {
+  height: 15px;
+}
+.dates-list-item:first-child {
+  grid-column-start: var(--start-column);
+}
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.emoji-container {
+  background-image: linear-gradient(#72687536, #75747500);
+  padding: 36px 24px;
+  border-radius: 24px;
+  border: 2.05px solid;
+
+  border-image-source: linear-gradient(139.28deg, #5a565647, #00000000);
+  width: 100%;
+  display: none;
+  flex-grow: 1;
+}
+.emoji-container-sm {
+  background-image: linear-gradient(#72687536, #75747500);
+  padding: 36px 24px;
+  border-radius: 24px;
+  border: 2.05px solid;
+
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(90, 86, 86, 0.28) 2.05%,
+    rgba(0, 0, 0, 0) 92.82%
+  );
+  width: 100%;
+}
+.emoji-list-container {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.emoji-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.emoji-name {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.emoji-image {
+  height: 24px;
+}
+.active-image {
+  height: 32px;
+  filter: drop-shadow(4px 4px 16px #ffffff64);
+}
+.drop-down-container {
+  background-image: linear-gradient(#72687536, #75747500);
+  padding: 36px 24px;
+  border-radius: 24px;
+  border: 2.05px solid;
+
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(90, 86, 86, 0.28) 2.05%,
+    rgba(0, 0, 0, 0) 92.82%
+  );
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.drop-down-sub-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.select-element-container {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+}
+.select-element {
+  width: 100%;
+  height: 45px;
+  padding: 9px 13px;
+  border: 1px solid #4e5d72;
+  outline: none;
+  border-radius: 8px;
+  background-color: #42404d;
+  box-shadow: 0 1 2 0 #00000014;
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.arrow-icon {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+}
+option {
+  background-color: #1c1a28;
+  font-family: Roboto;
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+}
+option:hover {
+  background: #42404d !important;
+}
+option:checked {
+  color: #ffbe38;
+}
+.count-text {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  align-self: center;
+}
+
+@media screen and (min-width: 468px) {
+  .day-list-container {
+    gap: 12px;
+  }
+  .dates-list-container {
+    gap: 12px;
+  }
+  .days-list-item {
+    height: 51px;
+    font-size: 16px;
+  }
+  .dates-list-item {
+    height: 51px;
+  }
+  .empty-date-button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 548px) {
+  .day-list-container {
+    gap: 15px;
+  }
+  .dates-list-container {
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 658px) {
+  .day-list-container {
+    gap: 18px;
+  }
+  .dates-list-container {
+    gap: 18px;
+  }
+  .days-list-item {
+    height: 45px;
+    font-size: 18px;
+  }
+  .dates-list-item {
+    height: 45px;
+  }
+  .empty-date-button {
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-size: 18px;
+  }
+  .date-emoji-image {
+    height: 17px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-content-container {
+    padding: 32px;
+  }
+  .month-container {
+    background-image: linear-gradient(#72687536, #75747500);
+    padding: 42px;
+    border-radius: 24px;
+    box-shadow:
+      inset 6.82px 6.82px 16.37px #51515166,
+      inset -6.82px -6.82px 20.46px #28262675;
+  }
+  .day-list-container {
+    gap: 20px;
+  }
+  .dates-list-container {
+    gap: 20px;
+  }
+  .days-list-item {
+    height: 37px;
+    font-size: 20px;
+  }
+  .dates-list-item {
+    height: 37px;
+  }
+  .drop-down-sub-container {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  .emoji-name {
+    font-size: 16px;
+  }
+  .emoji-image {
+    height: 32px;
+  }
+  .active-image {
+    height: 56px;
+  }
+  .date-emoji-image {
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .date-emoji-image {
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .month-emoji-container {
+    flex-direction: row;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .month-container {
+    width: 123%;
+  }
+  .emoji-container {
+    display: flex;
+  }
+  .emoji-container-sm {
+    display: none;
+  }
+  .drop-down-container {
+    flex-grow: 1;
+  }
+  .home-content-heading {
+    display: flex;
+  }
+  .active-image {
+    height: 56px;
+    filter: drop-shadow(4px 4px 16px #ffffff64);
+  }
+  .date-emoji-image {
+    height: 24px;
+  }
+  .empty-date-button {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,150 @@
+.reports-bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.reports-content-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  flex-grow: 1;
+  background-size: cover;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.reports-heading {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.report-card-list-container {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.report-card-list-item {
+  background-image: linear-gradient(#72687536, #75747500);
+  border-radius: 27px;
+  border: 2.05px solid;
+  padding: 8px 80px;
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(90, 86, 86, 0.28) 2.05%,
+    rgba(0, 0, 0, 0) 92.82%
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  height: 144px;
+  width: 160px;
+  flex-grow: 1;
+}
+.reports-emoji-name {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.reports-emoji-image {
+  height: 24px;
+}
+.reports-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reports-select-container {
+  position: relative;
+}
+.reports-select {
+  height: 32px;
+  width: 92px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.down-arrow {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #475569;
+  font-size: 14px;
+}
+.recharts-emoji-chart image {
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .reports-content-container {
+    padding: 32px;
+  }
+  .reports-heading-1 {
+    font-size: 18px;
+  }
+  .reports-emoji-image {
+    height: 38px;
+  }
+  .report-card-list-item {
+    padding: 16px 80px;
+    height: 178px;
+    width: 190px;
+    gap: 12px;
+  }
+  .recharts-emoji-chart image {
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .reports-content-container {
+    padding: 32px;
+  }
+  .reports-heading-1 {
+    font-size: 22px;
+  }
+  .reports-emoji-image {
+    height: 44px;
+  }
+  .report-card-list-item {
+    padding: 24px 80px;
+    height: 215px;
+    width: 220px;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reports-content-container {
+    padding: 32px;
+  }
+  .reports-heading-1 {
+    font-size: 26px;
+  }
+  .reports-emoji-image {
+    height: 50px;
+  }
+  .report-card-list-item {
+    padding: 30px 80px;
+    height: 254px;
+    width: 250px;
+    gap: 18px;
+  }
+}
