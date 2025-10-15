@@ -10,8 +10,7 @@
   background-image: linear-gradient(#72687536, #75747500);
   padding: 42px 24px;
   border-radius: 24px;
-  box-shadow:
-    inset 6.82px 6.82px 16.37px #51515166,
+  box-shadow: inset 6.82px 6.82px 16.37px #51515166,
     inset -6.82px -6.82px 20.46px #28262675;
   width: 88%;
   display: flex;
